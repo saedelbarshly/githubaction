@@ -11,7 +11,7 @@ on:
           - production
 jobs:
   deploy:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy application
-        run: echo "Deploying the application."
+        run: echo "Deploying the application to ${{ inputs.enviroment }}"
